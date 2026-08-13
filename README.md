@@ -1,66 +1,110 @@
-# Introdução à IA - Aula 01
+# Residência em Inteligência Artificial — Instituto ECOA PUC-Rio
 
-Este projeto contém o código inicial para interagir com a API da OpenAI utilizando Python. 
+Repositório com as atividades desenvolvidas durante a Residência em Inteligência Artificial do Instituto ECOA — PUC-Rio.
 
-Para garantir a eficiência de recursos e o isolamento das dependências, recomendamos fortemente o uso de um Ambiente Virtual Python (Virtual Environment ou `venv`).
+## Organização
 
-## 🚀 Passo a Passo para Configuração e Execução
-
-### 1. Criar o Ambiente Virtual (venv)
-Abra o seu terminal na pasta raiz do projeto (`/IA`) e execute o seguinte comando para criar o ambiente virtual:
-
-```bash
-# No Linux/macOS
-python3 -m venv venv
-
-# No Windows
-python -m venv venv
+```text
+AULA_01/
+AULA_02/
+AULA_03/
+AULA_04/
+AULA_05/
 ```
 
-### 2. Ativar o Ambiente Virtual
-Sempre que for trabalhar no projeto ou rodar os códigos, você precisa ativar o `venv`.
+## Aulas
+
+### AULA_01 — Introdução a LLMs e APIs
+
+Primeiros testes com modelos de linguagem utilizando Python e API.
+
+Principais pontos:
+- configuração do ambiente;
+- uso de variáveis de ambiente;
+- envio de prompts;
+- leitura das respostas da API.
+
+### AULA_02 — Processamento de PDFs
+
+Uso do Docling para converter documentos PDF em Markdown e extrair informações estruturadas.
+
+```text
+PDF → Markdown → Metadados
+```
+
+### AULA_03 — Embeddings e Similaridade
+
+Implementação e testes com embeddings.
+
+Foram trabalhadas:
+- Distância Euclidiana;
+- Similaridade de Cosseno;
+- Distância de Cosseno;
+- busca semântica entre textos.
+
+### AULA_04 — Chunking com LangChain
+
+Comparação de diferentes formas de dividir documentos em chunks.
+
+Foram testadas 10 estratégias, incluindo:
+- diferentes tamanhos de chunk;
+- overlap;
+- divisão por parágrafos;
+- divisão por sentenças;
+- RecursiveCharacterTextSplitter;
+- MarkdownHeaderTextSplitter.
+
+```text
+PDF → Markdown → Chunking → Embeddings → JSON
+```
+
+### AULA_05 — Documents e Busca Vetorial
+
+Uso da estrutura `Document` do LangChain para organizar os chunks gerados anteriormente.
+
+Também foram utilizados:
+- metadados;
+- Hugging Face Embeddings;
+- InMemoryVectorStore;
+- busca semântica;
+- filtros por metadados;
+- busca em múltiplos documentos.
+
+```text
+Chunks → Document → Embeddings → Vector Store → Busca
+```
+
+## Tecnologias
+
+- Python
+- LangChain
+- Docling
+- Hugging Face
+- Sentence Transformers
+- NumPy
+- Pandas
+- OpenAI API
+- Git e GitHub
+
+## Ambiente
+
+Para criar e ativar um ambiente virtual no Windows:
 
 ```bash
-# No Linux/macOS
-source venv/bin/activate
-
-# No Windows
+python -m venv venv
 venv\Scripts\activate
 ```
-*(Você saberá que o ambiente está ativado porque o nome `(venv)` aparecerá no início da linha de comando do terminal).*
 
-### 3. Instalar as Dependências
-Com o ambiente ativado, instale as bibliotecas necessárias (como `openai` e `python-dotenv`) a partir do arquivo `requirements.txt` que está na raiz do projeto:
+Para instalar as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configurar as Variáveis de Ambiente (Segurança)
-Para proteger seus dados e garantir a segurança, as chaves de API nunca devem ser inseridas diretamente no código nem comitadas em repositórios públicos.
+## Observação
 
-Certifique-se de que o arquivo `.env` exista dentro da pasta `AULA_01` (ou na raiz, dependendo de onde for executar) com a seguinte estrutura:
+Arquivos com chaves de API, como `.env`, não devem ser enviados para o GitHub.
 
-```env
-OPENAI_API_KEY=sua_chave_de_api_aqui
-OPENAI_MODEL=gpt-4o-mini
-```
-*(Importante: adicione o arquivo `.env` ao seu `.gitignore` para não enviá-lo para o GitHub).*
+## Autor
 
-### 5. Rodar o Código
-Agora que o ambiente está isolado e as bibliotecas estão instaladas, você pode executar o script:
-
-```bash
-# Entre na pasta da aula
-cd AULA_01
-
-# Execute o script Python
-python hello_llm.py
-```
-
----
-### 🛑 Como sair do Ambiente Virtual?
-Quando terminar de programar, você pode desativar o ambiente virtual executando simplesmente:
-```bash
-deactivate
-```
+Luiz Carlos Gomes da Silva Júnior
