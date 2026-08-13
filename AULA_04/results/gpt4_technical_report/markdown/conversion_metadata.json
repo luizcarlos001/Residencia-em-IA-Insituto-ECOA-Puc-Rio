@@ -1,0 +1,10 @@
+{
+  "document_id": "gpt4_technical_report",
+  "document_name": "gpt4_technical_report.pdf",
+  "markdown_file": "results\\gpt4_technical_report\\markdown\\gpt4_technical_report.md",
+  "num_pages": 100,
+  "num_tables": 12,
+  "num_pictures": 29,
+  "conversion_tool": "Docling",
+  "image_mode": "referenced"
+}

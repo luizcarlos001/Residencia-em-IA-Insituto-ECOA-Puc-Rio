@@ -1,0 +1,10 @@
+{
+  "document_id": "instruct_gpt",
+  "document_name": "instruct_gpt.pdf",
+  "markdown_file": "results\\instruct_gpt\\markdown\\instruct_gpt.md",
+  "num_pages": 68,
+  "num_tables": 26,
+  "num_pictures": 24,
+  "conversion_tool": "Docling",
+  "image_mode": "referenced"
+}
