@@ -2,16 +2,6 @@
 
 Repositório com as atividades desenvolvidas durante a Residência em Inteligência Artificial do Instituto ECOA — PUC-Rio.
 
-## Organização
-
-```text
-AULA_01/
-AULA_02/
-AULA_03/
-AULA_04/
-AULA_05/
-```
-
 ## Aulas
 
 ### AULA_01 — Introdução a LLMs e APIs
