@@ -1,0 +1,17 @@
+# Ambiente virtual
+venv/
+
+# Chave da API
+.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+*_log.txt
+
+# Editores
+.vscode/
+.idea/
