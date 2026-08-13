@@ -101,10 +101,6 @@ Para instalar as dependências:
 pip install -r requirements.txt
 ```
 
-## Observação
-
-Arquivos com chaves de API, como `.env`, não devem ser enviados para o GitHub.
-
 ## Autor
 
 Luiz Carlos Gomes da Silva Júnior
